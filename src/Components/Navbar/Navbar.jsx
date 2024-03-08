@@ -99,7 +99,7 @@ const Navbar = () => {
               to={path}
               offset={-100}
               key={path}
-              className=" block text-red-400 hover:text-black first:font-medium hover:translate-x-2 duration-300"
+              className=" block text-red-400 hover:text-black first:font-medium hover:translate-x-2  duration-300 "
             >
               {page}
             </NavLink>

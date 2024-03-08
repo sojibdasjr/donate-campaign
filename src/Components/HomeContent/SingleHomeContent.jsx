@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleHomeContent = ({ item }) => {
   const { id, category, title, image, bg_color } = item;
@@ -6,13 +7,14 @@ const SingleHomeContent = ({ item }) => {
   return (
     // <div className={` rounded pb-3 bg-${bg_color}-300 cursor-pointer`}>
 
-    <div
+    <Link
+      to={`/details/${id}`}
       className={` ${
         (bg_color === "blue" && "bg-blue-100 text-blue-800") ||
         (bg_color === "red" && "bg-red-100 text-red-800") ||
         (bg_color === "orange" && "bg-orange-100 text-orange-800") ||
         (bg_color === "green" && "bg-green-100 text-green-800")
-      } rounded pb-3 cursor-pointer`}
+      } rounded pb-3 `}
     >
       <img src={image} className="w-full" alt="" />
 
@@ -28,7 +30,7 @@ const SingleHomeContent = ({ item }) => {
       </h1>
 
       <h1 className={` mx-2 font-semibold `}>{title}</h1>
-    </div>
+    </Link>
   );
 };
 
