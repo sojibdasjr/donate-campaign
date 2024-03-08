@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "category": "Health",
+      "title": "Medical Supplies Donation",
+      "image": "../src/assets/Health.png",
+      "bg_color": "blue",
+      "text_color": "blue",
+      "donation_price": "$50",
+      "description": "Help provide essential medical supplies to healthcare facilities in need. Your donation will support the purchase of items such as masks, gloves, and sanitizers to protect frontline workers and patients from infectious diseases."
+    },
+
+    {
+      "id": 6,
+      "category": "Education",
+      "title": "Scholarship Program for Underprivileged Students",
+      "image": "../src/assets/Education.png",
+      "bg_color": "red",
+      "text_color": "red",
+      "donation_price": "$50",
+      "description": "Empower underprivileged students by providing them with access to education through scholarships. Your donation will support tuition fees, school supplies, and educational resources for students who lack financial means to pursue their academic goals."
+    },
+
+    {
+      "id": 12,
+      "category": "Cloth",
+      "title": "School Uniform Assistance Program",
+      "image": "../src/assets/Clothing.png",
+      "bg_color": "green",
+      "text_color": "green",
+      "donation_price": "$30",
+      "description": "Support students from low-income families by providing them with school uniforms. Your donation will ensure that all students have access to appropriate attire for school, helping to reduce barriers to education and promote inclusivity."
+    },
+
+    {
+      "id": 2,
+      "category": "Health",
+      "title": "Community Health Clinic Fund",
+      "image": "../src/assets/Health.png",
+      "bg_color": "blue",
+      "text_color": "blue",
+      "donation_price": "$100",
+      "description": "Support community health clinics that offer essential medical services to underserved populations. Your donation will help cover operational costs and enable clinics to provide quality healthcare services to those in need."
+    },
+    {
+      "id": 5,
+      "category": "Health",
+      "title": "Emergency Medical Relief Fund",
+      "image": "../src/assets/Health.png",
+      "bg_color": "blue",
+      "text_color": "blue",
+      "donation_price": "$50",
+      "description": "Support emergency medical relief efforts to provide immediate assistance during crises such as natural disasters or pandemics. Your donation will help fund medical supplies, equipment, and medical teams to provide critical care and support to affected communities."
+    },
+
+    {
+      "id": 3,
+      "category": "Health",
+      "title": "Nutrition Program for Children",
+      "image": "../src/assets/Health.png",
+      "bg_color": "blue",
+      "text_color": "blue",
+      "donation_price": "$20",
+      "description": "Contribute to a nutrition program aimed at improving the health and well-being of children in low-income communities. Your donation will support initiatives such as providing nutritious meals, educational resources, and healthcare services to children and their families."
+    },
+    {
+      "id": 11,
+      "category": "Cloth",
+      "title": "Winter Clothing Drive",
+      "image": "../src/assets/Clothing.png",
+      "bg_color": "green",
+      "text_color": "green",
+      "donation_price": "$20",
+      "description": "Donate warm clothing items such as coats, jackets, sweaters, and blankets to help those in need stay warm during the winter months. Your donation will provide essential winter clothing to individuals and families facing financial hardship or homelessness."
+    },
+    {
+      "id": 8,
+      "category": "Education",
+      "title": "Digital Learning Initiative",
+      "image": "../src/assets/Education.png",
+      "bg_color": "red",
+      "text_color": "red",
+      "donation_price": "$30",
+      "description": "Support the integration of technology into education through digital learning initiatives. Your donation will provide students and educators with access to digital devices, internet connectivity, and educational software to facilitate online learning and enhance educational outcomes."
+    },
+    {
+      "id": 9,
+      "category": "Education",
+      "title": "Teacher Training Program",
+      "image": "../src/assets/Education.png",
+      "bg_color": "red",
+      "text_color": "red",
+      "donation_price": "$50",
+      "description": "Invest in the professional development of teachers through training programs and workshops. Your donation will equip educators with the necessary skills, knowledge, and resources to deliver high-quality instruction and support student learning effectively."
+    },
+
+    {
+      "id": 7,
+      "category": "Education",
+      "title": "School Infrastructure Development Project",
+      "image": "../src/assets/Education.png",
+      "bg_color": "red",
+      "text_color": "red",
+      "donation_price": "$100",
+      "description": "Invest in the improvement of school infrastructure to create conducive learning environments for students. Your donation will support the construction or renovation of classrooms, libraries, laboratories, and other facilities to enhance the quality of education provided."
+    },
+
+    {
+      "id": 4,
+      "category": "Health",
+      "title": "Mental Health Awareness Campaign",
+      "image": "../src/assets/Health.png",
+      "bg_color": "blue",
+      "text_color": "blue",
+      "donation_price": "$30",
+      "description": "Join the effort to raise awareness about mental health issues and promote mental well-being in communities. Your donation will support initiatives such as educational workshops, counseling services, and outreach programs to destigmatize mental illness and provide support to those in need."
+    },
+
+    {
+      "id": 13,
+      "category": "Cloth",
+      "title": "Professional Attire Donation Drive",
+      "image": "../src/assets/Clothing.png",
+      "bg_color": "green",
+      "text_color": "green",
+      "donation_price": "$50",
+      "description": "Donate professional attire such as suits, dresses, and accessories to help individuals dress for success in the workplace. Your donation will support career development initiatives and empower individuals to achieve economic self-sufficiency."
+    },
+    {
+      "id": 18,
+      "category": "Foods",
+      "title": "Community Kitchen Support",
+      "image": "../src/assets/Food.png",
+      "bg_color": "orange",
+      "text_color": "orange",
+      "donation_price": "$50",
+      "description": "Contribute to community kitchens that provide free or low-cost meals to individuals and families in need. Your donation will support meal preparation, food sourcing, and kitchen operations to address hunger and food insecurity in your community."
+    },
+
+    {
+      "id": 15,
+      "category": "Cloth",
+      "title": "Emergency Relief Clothing Kits",
+      "image": "../src/assets/Clothing.png",
+      "bg_color": "green",
+      "text_color": "green",
+      "donation_price": "$30",
+      "description": "Support emergency relief efforts by providing clothing kits to individuals and families affected by disasters or crises. Your donation will help supply essential clothing items such as shirts, pants, shoes, and undergarments to those in urgent need of assistance."
+    },
+    {
+      "id": 16,
+      "category": "Foods",
+      "title": "Food Bank Donation",
+      "image": "../src/assets/Food.png",
+      "bg_color": "orange",
+      "text_color": "orange",
+      "donation_price": "$20",
+      "description": "Donate to a local food bank to help provide nutritious food to individuals and families facing hunger and food insecurity. Your donation will support food distribution programs, meal services, and hunger relief efforts in your community."
+    },
+    {
+      "id": 17,
+      "category": "Foods",
+      "title": "Meal Delivery Service for Seniors",
+      "image": "../src/assets/Food.png",
+      "bg_color": "orange",
+      "text_color": "orange",
+      "donation_price": "$30",
+      "description": "Support meal delivery services that provide nutritious meals to seniors who are homebound or unable to cook for themselves. Your donation will ensure that seniors have access to healthy and balanced meals, promoting their well-being and independence."
+    },
+
+    {
+      "id": 10,
+      "category": "Education",
+      "title": "Literacy Campaign for Rural Communities",
+      "image": "../src/assets/Education.png",
+      "bg_color": "red",
+      "text_color": "red",
+      "donation_price": "$20",
+      "description": "Promote literacy and education in rural communities through awareness campaigns and educational interventions. Your donation will support initiatives such as adult literacy programs, community libraries, and reading materials to empower individuals and communities through education."
+    },
+    {
+      "id": 14,
+      "category": "Cloth",
+      "title": "Children's Clothing Assistance Program",
+      "image": "../src/assets/Clothing.png",
+      "bg_color": "green",
+      "text_color": "green",
+      "donation_price": "$20",
+      "description": "Provide clothing assistance to children from low-income families to ensure they have access to clean and appropriate clothing. Your donation will support initiatives such as clothing drives, vouchers, and distribution programs to meet the basic needs of children."
+    },
+
+    {
+      "id": 19,
+      "category": "Foods",
+      "title": "Farmers Market Voucher Program",
+      "image": "../src/assets/Food.png",
+      "bg_color": "orange",
+      "text_color": "orange",
+      "donation_price": "$40",
+      "description": "Support farmers market voucher programs that enable low-income individuals and families to purchase fresh and locally grown produce. Your donation will help increase access to nutritious food options and support local farmers and food producers."
+    },
+    {
+      "id": 20,
+      "category": "Foods",
+      "title": "School Meal Assistance Program",
+      "image": "../src/assets/Food.png",
+      "bg_color": "orange",
+      "text_color": "orange",
+      "donation_price": "$25",
+      "description": "Donate to school meal assistance programs that provide free or reduced-price meals to students from low-income families. Your donation will support efforts to eliminate hunger and ensure that all students have access to nutritious meals for optimal learning and development."
+    }
+  ]
+}
