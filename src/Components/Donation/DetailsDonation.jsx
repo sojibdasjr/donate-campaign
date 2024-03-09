@@ -1,8 +1,9 @@
-import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { saveDonation } from "../Utillitys/localStroage";
+import { getDonation, saveDonation } from "../Utillitys/localStroage";
+import { useState } from "react";
+import gif from "../../assets/donation.gif";
 
 const DetailsDonation = () => {
   const items = useLoaderData();
@@ -13,19 +14,27 @@ const DetailsDonation = () => {
   const { title, cover, donation_price, bg_color, description } = newItem;
 
   const handleDonate = () => {
-    saveDonation(IntId);
-    toast.success("Donation Successfully !!");
+    const donationLS = getDonation();
+
+    if (donationLS.includes(IntId)) {
+      toast.error("You Have Already Donated ! Thanks");
+    } else {
+      saveDonation(IntId);
+
+      toast.success("Donation Successfully !!");
+    }
   };
 
   return (
     <div className="bg-white pt-[74px]">
-      <div class="relative mx-4 md:mx-16 ">
+      <div className="relative mx-4 md:mx-16 ">
         <img
           className="rounded-lg   bg-cover w-full md:h-[520px] lg:h-[720px] "
           src={cover}
           alt=""
         />
-        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 rounded-lg w-full py-5 ">
+
+        <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 rounded-lg w-full py-5 ">
           <button
             onClick={handleDonate}
             className={`

@@ -5,6 +5,8 @@ import SingleDonation from "./SingleDonation";
 
 const Donation = () => {
   const [displayItem, setDisplayItem] = useState([]);
+  const [showAllDonation, setShowAllDonation] = useState(false);
+
   const items = useLoaderData();
   const allData = items.items;
 
@@ -14,16 +16,37 @@ const Donation = () => {
       const giveDonation = allData.filter((data) =>
         donationLS.includes(data.id)
       );
+
       setDisplayItem(giveDonation);
     }
   }, []);
 
   return (
     <div className="bg-white pt-[76px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 ">
-        {displayItem.map((item) => (
-          <SingleDonation key={item.id} item={item}></SingleDonation>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mx-4 md:mx-16">
+        {showAllDonation === true
+          ? displayItem.map((item) => (
+              <SingleDonation key={item.id} item={item}></SingleDonation>
+            ))
+          : displayItem
+              .slice(0, 4)
+              .map((item) => (
+                <SingleDonation key={item.id} item={item}></SingleDonation>
+              ))}
+      </div>
+      <div className="flex items-center justify-center ">
+        {displayItem.length >= 4 && (
+          <button
+            onClick={() => setShowAllDonation(true)}
+            className={
+              showAllDonation === true
+                ? "hidden"
+                : "text-white p-2 rounded bg-black my-5"
+            }
+          >
+            Show All
+          </button>
+        )}
       </div>
     </div>
   );

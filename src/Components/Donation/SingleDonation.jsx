@@ -12,10 +12,10 @@ const SingleDonation = ({ item }) => {
         (bg_color === "red" && "bg-red-200 text-red-800") ||
         (bg_color === "orange" && "bg-orange-200 text-orange-800") ||
         (bg_color === "green" && "bg-green-200 text-green-800")
-      }  flex items-center gap-4 mx-4 md:mx-16 mb-2 rounded`}
+      }  flex items-center gap-4 mb-5 rounded`}
     >
       <div>
-        <img className="w-[325px] h-[176px]" src={image} alt="" />
+        <img className="rounded" src={image} alt="" />
       </div>
       <div>
         <p
@@ -24,13 +24,13 @@ const SingleDonation = ({ item }) => {
             (bg_color === "red" && "bg-red-300 ") ||
             (bg_color === "orange" && "bg-orange-300 ") ||
             (bg_color === "green" && "bg-green-300 ")
-          } text-center font-semibold  w-20 rounded m-2`}
+          }  font-semibold w-20 ps-1 rounded m-2`}
         >
           {category}
         </p>
         <h1 className="text-black font-bold">{title}</h1>
         <p className="font-bold">{donation_price}</p>
-        <Link>
+        <Link to={`/details/${id}`}>
           {" "}
           <button
             className={` ${
