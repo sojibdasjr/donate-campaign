@@ -50,13 +50,17 @@ const Navbar = () => {
           {/* Nav items for large devices  */}
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ page, path }) => (
-              <NavLink
-                to={path}
+              <li
                 key={path}
-                className="  rounded block text-black hover:text-red-200 focus:font-bold focus:text-red-600 "
+                className=" font-bold rounded block text-black hover:text-red-400   "
               >
-                {page}
-              </NavLink>
+                <NavLink
+                  className={({ isActive }) => isActive && "active"}
+                  to={path}
+                >
+                  {page}
+                </NavLink>
+              </li>
             ))}
           </ul>
 
@@ -95,14 +99,20 @@ const Navbar = () => {
           }`}
         >
           {navItems.map(({ page, path }) => (
-            <NavLink
-              to={path}
+            <li
               offset={-100}
               key={path}
-              className=" block text-red-400 hover:text-black first:font-medium hover:translate-x-2  duration-300 "
+              className=" block text-black hover:text-red-400 first:font-medium hover:translate-x-2  duration-300 "
             >
-              {page}
-            </NavLink>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+                to={path}
+              >
+                {page}
+              </NavLink>
+            </li>
           ))}
         </div>
       </nav>
