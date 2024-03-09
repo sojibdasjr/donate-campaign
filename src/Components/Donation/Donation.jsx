@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getDonation } from "../Utillitys/localStroage";
+import SingleDonation from "./SingleDonation";
 
 const Donation = () => {
   const [displayItem, setDisplayItem] = useState([]);
@@ -16,10 +17,14 @@ const Donation = () => {
       setDisplayItem(giveDonation);
     }
   }, []);
-  console.log(displayItem);
+
   return (
-    <div>
-      <h1>Donation {displayItem.length}</h1>
+    <div className="bg-white pt-[76px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
+        {displayItem.map((item) => (
+          <SingleDonation key={item.id} item={item}></SingleDonation>
+        ))}
+      </div>
     </div>
   );
 };
