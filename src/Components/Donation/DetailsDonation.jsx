@@ -2,8 +2,6 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getDonation, saveDonation } from "../Utillitys/localStroage";
-import { useState } from "react";
-import gif from "../../assets/donation.gif";
 
 const DetailsDonation = () => {
   const items = useLoaderData();
