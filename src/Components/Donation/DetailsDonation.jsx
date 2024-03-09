@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { saveDonation } from "../Utillitys/localStroage";
 
 const DetailsDonation = () => {
   const items = useLoaderData();
@@ -12,6 +13,7 @@ const DetailsDonation = () => {
   const { title, cover, donation_price, bg_color, description } = newItem;
 
   const handleDonate = () => {
+    saveDonation(IntId);
     toast.success("Donation Successfully !!");
   };
 
