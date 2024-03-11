@@ -1,7 +1,6 @@
 import React from "react";
 
-const Hero = () => {
-  // search incliment
+const Hero = ({ setSearchQueray }) => {
   return (
     <div
       className="hero h-[620px]"
@@ -21,6 +20,8 @@ const Hero = () => {
                 <input
                   className="input input-bordered join-item bg-white "
                   placeholder="Search"
+                  type="text"
+                  onChange={(e) => setSearchQueray(e.target.value)}
                 />
               </div>
             </div>

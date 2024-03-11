@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SingleHomeContent from "./SingleHomeContent";
 
-const HomeContents = () => {
+const HomeContents = ({ searchQueray }) => {
   const [loader, setLoader] = useState(true);
   const [items, setItems] = useState([]);
   useState(() => {
@@ -20,9 +20,19 @@ const HomeContents = () => {
         </div>
       ) : (
         <div className="grid md:grid-cols-4 gap-4 mx-4 md:mx-14 ">
-          {items.map((item) => (
-            <SingleHomeContent key={item.id} item={item}></SingleHomeContent>
-          ))}
+          {items
+            .filter((val) => {
+              if (searchQueray === "") {
+                return val;
+              } else if (
+                val.category.toLowerCase().includes(searchQueray.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((item) => (
+              <SingleHomeContent key={item.id} item={item}></SingleHomeContent>
+            ))}
         </div>
       )}
     </div>
