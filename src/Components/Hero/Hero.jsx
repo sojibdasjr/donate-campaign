@@ -1,6 +1,7 @@
 import React from "react";
 
 const Hero = () => {
+  // search incliment
   return (
     <div
       className="hero h-[620px]"
