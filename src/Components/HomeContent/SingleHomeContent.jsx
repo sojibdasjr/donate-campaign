@@ -16,7 +16,7 @@ const SingleHomeContent = ({ item }) => {
         (bg_color === "green" && "bg-green-100 text-green-800")
       } rounded pb-3 `}
     >
-      <img src={image} className="w-full" alt="" />
+      <img src={image} className="w-full rounded-t-md" alt="" />
 
       <h1
         className={` ${
