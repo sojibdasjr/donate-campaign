@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getDonation } from "../Utillitys/localStroage";
 import SingleDonation from "./SingleDonation";
 
@@ -23,17 +23,26 @@ const Donation = () => {
 
   return (
     <div className="bg-white pt-[76px]">
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mx-4 md:mx-16">
-        {showAllDonation === true
-          ? displayItem.map((item) => (
-              <SingleDonation key={item.id} item={item}></SingleDonation>
-            ))
-          : displayItem
-              .slice(0, 4)
-              .map((item) => (
+      {displayItem.length <= 0 ? (
+        <div className="text-black flex justify-center items-center h-[420px]    md:h-[700px]">
+          <Link to="/" className="p-2 bg-green-400 rounded">
+            {" "}
+            Please Donation first
+          </Link>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mx-4 md:mx-16">
+          {showAllDonation === true
+            ? displayItem.map((item) => (
                 <SingleDonation key={item.id} item={item}></SingleDonation>
-              ))}
-      </div>
+              ))
+            : displayItem
+                .slice(0, 4)
+                .map((item) => (
+                  <SingleDonation key={item.id} item={item}></SingleDonation>
+                ))}
+        </div>
+      )}
       <div className="flex items-center justify-center ">
         {displayItem.length >= 4 && (
           <button
